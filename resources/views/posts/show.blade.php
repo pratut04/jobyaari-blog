@@ -63,7 +63,7 @@
 
             <hr>
 
-            <div>
+            <div class="post-content">
                 {!! $post->content !!}
             </div>
             <hr class="my-5">
@@ -198,6 +198,62 @@
 .related-post-link:hover{
     text-decoration:underline;
     color:#084298;
+}
+
+.post-content h1{
+    font-size:40px;
+    font-weight:700;
+    margin-top:24px;
+    margin-bottom:16px;
+}
+
+.post-content h2{
+    font-size:32px;
+    font-weight:700;
+    margin-top:22px;
+    margin-bottom:14px;
+}
+
+.post-content h3{
+    font-size:26px;
+    font-weight:700;
+    margin-top:20px;
+    margin-bottom:12px;
+}
+
+.post-content h4{
+    font-size:22px;
+    font-weight:700;
+    margin-top:18px;
+    margin-bottom:10px;
+}
+
+.post-content p{
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom:16px;
+}
+
+.post-content ul,
+.post-content ol{
+    padding-left:25px;
+    margin-bottom:16px;
+}
+
+.post-content li{
+    margin-bottom:8px;
+}
+
+.post-content table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+.post-content table td,
+.post-content table th{
+    border:1px solid #d1d5db;
+    padding:10px;
 }
 
 </style>
