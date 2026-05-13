@@ -544,9 +544,17 @@ use Illuminate\Support\Str;
                             <!-- CONTENT -->
                             <div class="flex-1">
 
-                                <h4 class="font-semibold leading-snug mb-2 text-gray-900 dark:text-white">
+                               <h4 class="font-semibold leading-snug mb-2">
 
-                                    {{ Str::limit($post->title, 45) }}
+                                    <span
+                                        class="text-gray-900 dark:text-white
+                                        hover:text-blue-600
+                                        transition duration-300"
+                                    >
+
+                                        {{ Str::limit($post->title, 45) }}
+
+                                    </span>
 
                                 </h4>
 
