@@ -1,59 +1,326 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+JobYaari 🚀
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+JobYaari is a modern Laravel-based blog and government job update platform built with Tailwind CSS, TinyMCE, AJAX features, authentication, dark mode, and Railway cloud deployment.
 
-## About Laravel
+The platform allows users to:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* Read blogs and job updates
+* Like and bookmark posts
+* Comment on articles
+* Browse categories
+* Search posts
+* Access admin dashboard
+* Create and manage blog posts with TinyMCE editor
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+⸻
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+🌐 Live Demo
 
-## Learning Laravel
+Production URL:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+https://jobyaari-blog-production.up.railway.app
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+⸻
 
-## Laravel Sponsors
+✨ Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🔐 Authentication System
 
-### Premium Partners
+* User Login
+* User Registration
+* Logout
+* Remember Me
+* CSRF Protection
+* Session-based Authentication
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+👤 User Features
 
-## Contributing
+* Save/Bookmark Posts
+* Like Posts
+* AJAX Comment System
+* Dark Mode Toggle
+* Responsive UI
+* Search Posts
+* Category Filtering
+* Date Filtering
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+📝 Admin Features
 
-## Code of Conduct
+* Admin Dashboard
+* Create Posts
+* Edit Posts
+* Delete Posts
+* Upload Featured Images
+* TinyMCE Rich Text Editor
+* Featured Posts
+* Draft & Published Status
+* Category Management
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+📚 Blog Features
 
-## Security Vulnerabilities
+* Related Posts
+* Popular Posts
+* Featured Posts
+* SEO Meta Tags
+* Open Graph Tags
+* Twitter Meta Tags
+* View Counter
+* Mobile Responsive Design
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+⚡ AJAX Features
 
-## License
+* AJAX Likes
+* AJAX Bookmarking
+* AJAX Comments
+* Live Filtering
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+⸻
+
+🛠️ Tech Stack
+
+Backend
+
+* Laravel
+* PHP
+* MySQL
+
+Frontend
+
+* Tailwind CSS
+* Blade Templates
+* JavaScript
+* TinyMCE Editor
+
+Deployment
+
+* Railway
+* GitHub
+
+Database
+
+* Railway MySQL
+* MySQL Workbench
+
+⸻
+
+📂 Project Structure
+
+app/
+resources/
+views/
+routes/
+public/
+database/
+
+⸻
+
+⚙️ Installation Setup
+
+1. Clone Repository
+
+git clone https://github.com/pratut04/jobyaari-blog
+
+2. Move Into Project Folder
+
+cd jobyaari
+
+3. Install Dependencies
+
+composer install
+npm install
+
+4. Create Environment File
+
+cp .env.example .env
+
+5. Generate Application Key
+
+php artisan key:generate
+
+6. Configure Database
+
+Update .env:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=jobyaari_blog
+DB_USERNAME=root
+DB_PASSWORD=******
+
+7. Run Migrations
+
+php artisan migrate
+
+8. Start Development Server
+
+php artisan serve
+
+9. Build Frontend Assets
+
+npm run build
+
+⸻
+
+🚂 Railway Deployment Setup
+
+Railway Variables
+
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://jobyaari-blog-production.up.railway.app
+ASSET_URL=https://jobyaari-blog-production.up.railway.app
+DB_CONNECTION=mysql
+DB_HOST=mysql.railway.internal
+DB_PORT=3306
+DB_DATABASE=railway
+DB_USERNAME=root
+DB_PASSWORD=******
+SESSION_DRIVER=file
+SESSION_SECURE_COOKIE=true
+SESSION_SAME_SITE=lax
+CACHE_STORE=file
+QUEUE_CONNECTION=sync
+
+⸻
+
+📦 Build Command
+
+npm install && npm run build
+
+▶️ Start Command
+
+php artisan serve --host=0.0.0.0 --port=8080
+
+⸻
+
+🗄️ Database Import Setup
+
+Export Local Database
+
+Using phpMyAdmin or MySQL Workbench.
+
+Import Into Railway MySQL
+
+1. Open MySQL Workbench
+2. Connect Railway MySQL
+3. Create schema
+4. Import SQL file
+5. Refresh schemas
+
+⸻
+
+🧠 TinyMCE Setup
+
+TinyMCE is used for rich text blog editing.
+
+Example:
+
+<script src="https://cdn.tiny.cloud/1/MY_API_KEY/tinymce/8/tinymce.min.js"></script>
+
+Features:
+
+* Headings
+* Tables
+* Lists
+* Images
+* Font Sizes
+* Rich Formatting
+
+⸻
+
+🌙 Dark Mode
+
+Dark mode is implemented using:
+
+* Tailwind CSS
+* Local Storage
+* JavaScript Theme Toggle
+
+⸻
+
+📱 Responsive Design
+
+The UI is fully responsive for:
+
+* Mobile Devices
+* Tablets
+* Desktop
+
+⸻
+
+🔎 SEO Optimization
+
+Implemented:
+
+* Meta Description
+* Open Graph Tags
+* Twitter Cards
+* SEO Friendly URLs
+* Dynamic Meta Content
+
+⸻
+
+📌 Main Functionalities
+
+User Side
+
+* Browse Posts
+* Search Posts
+* Read Articles
+* Comment
+* Like
+* Bookmark
+
+Admin Side
+
+* Create/Edit/Delete/View Posts
+* Manage Content
+* Upload Images
+* Control Featured Posts
+
+⸻
+
+🔒 Security Features
+
+* CSRF Protection
+* Laravel Authentication
+* Secure Sessions
+* HTTPS Forced in Production
+
+⸻
+
+🧪 Useful Commands
+
+Clear Cache
+
+php artisan optimize:clear
+
+Config Clear
+
+php artisan config:clear
+
+Cache Clear
+
+php artisan cache:clear
+
+Build Assets
+
+npm run build
+
+⸻
+
+📸 Screenshots
+
+
+⸻
+
+👩‍💻 Developed By
+
+Pratiksha Tivale
+
+⸻
+
+📄 License
+
+This project is developed for learning and portfolio purposes.
