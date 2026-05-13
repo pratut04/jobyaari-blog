@@ -70,6 +70,78 @@ use Illuminate\Support\Str;
 
     </script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <style>
+
+    .post-content h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+
+    .post-content h2{
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 22px;
+        margin-bottom: 14px;
+        line-height: 1.3;
+    }
+
+    .post-content h3{
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    .post-content h4{
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 18px;
+        margin-bottom: 10px;
+    }
+
+    .post-content p{
+        font-size: 16px;
+        line-height: 1.9;
+        margin-bottom: 16px;
+    }
+
+    .post-content ul{
+        padding-left: 25px;
+        margin-bottom: 16px;
+    }
+
+    .post-content ol{
+        padding-left: 25px;
+        margin-bottom: 16px;
+    }
+
+    .post-content li{
+        margin-bottom: 8px;
+    }
+
+    .post-content table{
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+    .post-content table td,
+    .post-content table th{
+        border: 1px solid #d1d5db;
+        padding: 10px;
+    }
+
+    .dark .post-content table td,
+    .dark .post-content table th{
+        border-color: #374151;
+    }
+
+    </style>
+
 </head>
 
 <body class="bg-gray-100 dark:bg-gradient-to-br dark:from-[#020617] dark:via-[#071129] dark:to-black dark:text-white transition duration-300 min-h-screen">
@@ -245,8 +317,8 @@ use Illuminate\Support\Str;
                         {{ $post->title }}
                     </h1>
                     
-                    <div class="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
-                       {!! str_replace('background:white', 'background:transparent', $post->content) !!}
+                    <div class="post-content text-gray-700 dark:text-gray-300">
+                    {!! str_replace('background:white', 'background:transparent', $post->content) !!}
                     </div>
 
 
