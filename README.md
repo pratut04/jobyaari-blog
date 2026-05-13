@@ -1,4 +1,4 @@
-JobYaari 🚀
+# JobYaari 🚀
 
 JobYaari is a modern Laravel-based blog and government job update platform built with Tailwind CSS, TinyMCE, AJAX features, authentication, dark mode, and Railway cloud deployment.
 
@@ -76,7 +76,7 @@ https://jobyaari-blog-production.up.railway.app
 
 ⸻
 
-🛠️ Tech Stack
+#🛠️ Tech Stack
 
 Backend
 
@@ -103,7 +103,7 @@ Database
 
 ⸻
 
-📂 Project Structure
+#📂 Project Structure
 
 app/
 resources/
@@ -122,7 +122,7 @@ git clone https://github.com/pratut04/jobyaari-blog
 
 2. Move Into Project Folder
 
-cd jobyaari
+cd jobyaari-blog
 
 3. Install Dependencies
 
